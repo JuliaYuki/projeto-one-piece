@@ -1,0 +1,245 @@
+@media (max-width: 769px) {
+  main::after {
+    background: linear-gradient(0deg, #000 20%, rgba(0, 0, 0, 0) 65%) no-repeat;
+    width: 100vw;
+  }
+
+  main .personagem .imagem {
+    height: 85%;
+    object-fit: contain;
+  }
+
+  .conteudo {
+    justify-content: flex-end;
+    left: 0;
+    top: -20%;
+    max-width: 100vw;
+    padding: 30px;
+  }
+
+  .conteudo .nome-personagem {
+    font-size: 36px;
+  }
+
+  .conteudo .descricao {
+    max-width: 500px;
+  }
+
+  .botoes {
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .botoes .botao img {
+    max-width: 70px;
+  }
+}
+
+@media (max-height: 885px) {
+  /* Ajustando a imagem do personagem e logo para ocupar menos espaço vertical */
+  .conteudo .logo {
+    height: 90px;
+    width: 200px;
+  }
+
+  main .personagem .imagem {
+    max-height: 60vh;
+  }
+
+  /* Ajustando o tamanho da fonte */
+  .conteudo .nome-personagem {
+    font-size: 44px;
+  }
+
+  .conteudo .descricao {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  /* Ajustando a altura e a posição dos botões */
+  .botoes {
+    top: auto;
+    bottom: 10px; /* Adiciona uma pequena margem do fundo da tela */
+  }
+
+  .botoes .botao img {
+    max-height: 80px; /* Reduzindo a altura máxima dos botões */
+  }
+}
+
+@media (max-height: 640px) {
+  main .personagem .imagem {
+    max-height: 45vh;
+  }
+
+  /* Ajustando a imagem do personagem e logo para ocupar menos espaço vertical */
+  .conteudo .logo {
+    transform: translateY(-30px);
+    height: 80px;
+    width: 180px;
+    margin-top: -50px;
+    margin-bottom: 15px;
+  }
+
+  /* Ajustando o tamanho da fonte */
+  .conteudo .nome-personagem {
+    transform: translateY(-20px);
+    font-size: 38px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+
+  .conteudo .descricao {
+    transform: translateY(-20px);
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: -10px;
+  }
+
+  /* Ajustando a altura e a posição dos botões */
+  .botoes {
+    top: auto;
+    bottom: 5px; /* Adiciona uma pequena margem do fundo da tela */
+  }
+
+  .botoes .botao img {
+    max-height: 45px; /* Reduzindo a altura máxima dos botões */
+  }
+}
+
+@media (max-width: 660px) {
+  main::after {
+    background: linear-gradient(0deg, #000 20%, rgba(0, 0, 0, 0) 65%) no-repeat;
+    width: 100vw;
+  }
+
+  main .personagem .imagem {
+    height: 85%;
+    object-fit: contain;
+  }
+
+  .conteudo {
+    justify-content: flex-end;
+    left: 0;
+    top: -20%;
+    max-width: 100vw;
+    padding: 30px;
+  }
+
+  .conteudo .nome-personagem {
+    font-size: 36px;
+  }
+
+  .conteudo .descricao {
+    max-width: 500px;
+  }
+
+  .botoes {
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .botoes .botao img {
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 615px) {
+  /* Ajuste na logo e imagem do personagem */
+  .conteudo .logo {
+    width: 150px;
+    height: 65px;
+  }
+
+  main .personagem .imagem {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ajuste no tamanho da fonte */
+  .conteudo .nome-personagem {
+    font-size: 42px;
+  }
+
+  .conteudo .descricao {
+    font-size: 14px; /* Reduz o tamanho da fonte da descrição */
+    line-height: 20px; /* Ajusta o espaçamento entre linhas */
+  }
+
+  /* Ajuste nos botões */
+  .botoes .botao img {
+    max-width: 45px; /* Reduz o tamanho das imagens dos botões */
+  }
+
+  .botoes .botao {
+    margin: 4px 2%; /* Reduz um pouco a margem e ajusta o espaçamento horizontal */
+    flex: 0 0 44%; /* Permite um pouco mais de flexibilidade no tamanho */
+  }
+}
+
+@media (max-width: 425px) {
+  /* Ajustando a imagem do personagem */
+  main .personagem .imagem {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ajustando a logo */
+  .conteudo .logo {
+    width: 170px;
+    height: 75px;
+  }
+
+  /* Ajustando o conteúdo */
+  .conteudo {
+    left: 20px;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  /* Ajustando o nome do personagem */
+  .conteudo .nome-personagem {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  /* Ajustando os botões para aparecerem em duas linhas sem rolagem */
+  .botoes {
+    position: absolute; /* Muda de fixed para absolute */
+    top: auto; /* Remover o posicionamento do topo */
+    bottom: 0; /* Posicionar os botões na parte inferior da tela */
+    right: 20px; /* Pequena margem à direita */
+    width: auto; /* Remover a largura fixa */
+    min-height: auto; /* Remover a altura mínima */
+    flex-direction: row; /* Botões em linha ao invés de coluna */
+    flex-wrap: wrap; /* Permitir a quebra de linha */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    left: 0; /* Alinha à esquerda da tela */
+    right: 0; /* Alinha à direita da tela, fazendo com que o contêiner se estenda por toda a largura */
+    justify-content: space-between; /* Distribui os botões uniformemente ao longo da largura */
+    justify-content: flex-start;
+  }
+
+  .botoes .botao {
+    margin: 5px 2.5%; /* Adiciona margem para todos os lados e usa porcentagem para espaçamento horizontal */
+    flex: 0 0 45%; /* O botão tentará ocupar até 45% da largura do contêiner, isso, junto com as margens, fará com que dois botões caibam em uma linha */
+    margin-right: 5%;
+  }
+
+  .botoes .botao:nth-last-child(1),
+  .botoes .botao:nth-last-child(2),
+  .botoes .botao:nth-last-child(3) {
+    margin-right: 0; /* Remove a margem à direita dos três últimos botões */
+  }
+
+  /* Ajustando a imagem dos botões */
+  .botoes .botao img {
+    max-width: 50px;
+  }
+}
